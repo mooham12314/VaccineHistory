@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vaccine History</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="main" action="search.jsp" method="Post">
+            ID :<input type="text" name="ID" size="60" />
+            <input type="submit" value="Search" name="search" />         
+        </form>
+        <form name="addVaccine" action="add.jsp" method="Post">
+            ID :<input type="text" name="ID" size="60" />
+            <select id="drop" name="drop">
+                <option value="SV">SV</option>
+                <option value="SP">SP</option>
+                <option value="AZ">AZ</option>
+                <option value="PZ">PZ</option>
+                <option value="MD">MD</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="submit" value="Add Vaccine History" name="add" />         
+        </form>
+    </body>
+</html>
